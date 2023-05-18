@@ -16,24 +16,25 @@ button.addEventListener('click', function(e) {
     const textTwo = document.createElement('h3');
     var imagen = document.getElementById('imageUrl').value;
     var img = document.createElement('img');
-    const removeBtn = document.createElement('button');
+    const removeBtn = document.createElement('Button');
+    const div = document.createElement('div');
     
-    textOne.style.backgroundColor = 'black';
-   
-    
-    textOne.innerText = topText.value;
-    meme.appendChild(textOne);
-    topText.value = '';
+    meme.appendChild(div);
 
     removeBtn.innerText = 'x';
-    textOne.appendChild(removeBtn);
+    div.appendChild(removeBtn);
 
     img.src = imagen;
-    textOne.appendChild(img);
+    div.appendChild(img);
     imageUrl.value = '';
 
+    textOne.innerText = topText.value;
+    div.appendChild(textOne);
+    topText.value = '';
+
+
     textTwo.innerText = bottom.value;
-    textOne.appendChild(textTwo);
+    div.appendChild(textTwo);
     bottom.value = '';
     
     

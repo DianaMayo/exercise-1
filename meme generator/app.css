@@ -29,46 +29,52 @@ label {
     border-right: 0dvh;
 }
  
-#meme { 
-  
+#meme div{
   width: 300px;
   height: 400px;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
+  margin-left: 10%;
   word-break: break-all;
+  display: flex;
+  position: relative;
+  padding-bottom: 2%;
 }
 
 #meme img {
   width: 100%;
-  height: 100%;  
+  height: 100%;   
 }
 
 #meme h2 {
   color: white;
   font-size: 1.5rem;
-  font: impact;   
-  text-align: center;
-  padding-top: 5%; 
+  font: impact;    
+  top: 0%;
   padding-left: 5%;
   padding-right: 5%;
+  text-align: center;
+  vertical-align: text-top;
+  position: absolute;
 }
 
 #meme h3 {
   color: white;
   font-size: 1.5rem;
-  font: impact; 
-  text-align: center;    
+  font: impact;    
+  bottom: 0%;
+  text-align: center;
+  vertical-align: text-bottom;
   padding-left: 5%;
   padding-right: 5%;
-  margin-top: 0%;
+  padding-bottom: 8%;
+  position: absolute;
 }
 
-
 #meme button {
-  background-color:black;
-  font-display: block;
-  color: white;
-  display: inline-flex;
-  
+  background: transparent;
+  color: black;
+  border: 0dvh;
+  font-size: 1.5rem;
+  font: impact;   
+  display: flex;
+  position: absolute;
 }
