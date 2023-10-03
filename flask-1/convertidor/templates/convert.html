@@ -1,0 +1,19 @@
+
+
+{% block title %}convertidor{% endblock %}
+{% block content %}
+{% for category,msg in get_flashed_messages(with_categories=true) %}
+<p>{{msg}}</p>
+{% endfor %}
+
+<h1>Converting</h1>
+<form action="/result" method="POST">
+    <p>Converting From:</p>
+    <input type="text" name="base">
+    <p>Converting To:</p>
+    <input type="text" name="symbols">
+    <p>Amount:</p>
+    <input type="text" name="amount">
+    <button type="submit" name="submit">convert</button>
+</form>
+{% endblock %}
