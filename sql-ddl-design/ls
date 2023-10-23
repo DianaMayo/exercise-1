@@ -1,0 +1,18 @@
+                                List of databases
+      Name      |  Owner   | Encoding | Collate |  Ctype  |   Access privileges   
+----------------+----------+----------+---------+---------+-----------------------
+ diana          | diana    | UTF8     | C.UTF-8 | C.UTF-8 | 
+ dog_app_db     | diana    | UTF8     | C.UTF-8 | C.UTF-8 | 
+ joins_exercise | diana    | UTF8     | C.UTF-8 | C.UTF-8 | 
+ library        | diana    | UTF8     | C.UTF-8 | C.UTF-8 | 
+ medical_center | diana    | UTF8     | C.UTF-8 | C.UTF-8 | 
+ playstore      | diana    | UTF8     | C.UTF-8 | C.UTF-8 | 
+ postgres       | postgres | UTF8     | C.UTF-8 | C.UTF-8 | 
+ products_db    | diana    | UTF8     | C.UTF-8 | C.UTF-8 | 
+ reddit_db      | diana    | UTF8     | C.UTF-8 | C.UTF-8 | 
+ template0      | postgres | UTF8     | C.UTF-8 | C.UTF-8 | =c/postgres          +
+                |          |          |         |         | postgres=CTc/postgres
+ template1      | postgres | UTF8     | C.UTF-8 | C.UTF-8 | =c/postgres          +
+                |          |          |         |         | postgres=CTc/postgres
+(11 rows)
+
