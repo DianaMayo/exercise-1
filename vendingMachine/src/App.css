@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+}
+
+.App nav a {
+  margin: 20px;
+  color: grey;
+}
+
+.App nav a.active {
+  color: black;
+}
