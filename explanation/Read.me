@@ -1,0 +1,17 @@
+Spanish Course
+
+This project is made in order to teach Spanish online, it has two essential routes, the dashboard and the video route where the teacher and the student connect online to give/receive the class.
+
+The development flow was created where an authentication was created, a part of the frontend is made with react and the other part of the backend is made with node
+
+I have a small interface, a signup and a home, with the signup I can create a user and then I can log in, the entire part of the authentication system is working with a database in MongoDB.
+Once the login is done, it directs us to the dashboard where there is a to-do and then we can go to the video, all these are protected routes.
+In MongoDB I can see my user collection and I also have another collection called tokens, which means that every time a session is started an access token and a refresh token are created. We process this information, we save a refresh token, in memory within the browser we have an access token that allows us to make the connection to our API and in this way authenticate in each request if the user is allowed or not to perform that activity.
+For the video, the ZegoCloud library was used.
+
+ZegoExpressEngine: It is the SDK that ZEGOCLOUD provides to manage the transmission of audio and video.
+
+2. Important Variables
+YOUR_APP_ID: It is the application ID that you get when you create one in the ZEGOCLOUD console.
+SERVER_SECRET: THESE ARE THE SECURE PRIVILEGES provided by ZEGOCLOUD.
+YOUR_TOKEN: ZEGOCLOUD requires a token to authenticate.
