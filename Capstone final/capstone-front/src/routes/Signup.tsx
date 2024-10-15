@@ -1,7 +1,7 @@
 import { useState } from "react";
 import DefaultLayout from "../layout/DefaultLayout";
 import { useAuth } from "../auth/AuthProvider";
-import { Navigate, useNavigate } from "react-router-dom";
+import {  Navigate, useNavigate } from "react-router-dom";
 import { AuthResponse, AuthResponseError } from "../types/types";
 import React from "react";
 
@@ -46,12 +46,14 @@ export default function Signup() {
   }
 
   return (
+  
     <DefaultLayout>
       <form onSubmit={handleSubmit} className="form">
         <h1>Signup</h1>
         {!!errorResponse && <div className="errorMessage">{errorResponse}</div>}
         <label>Name</label>
         <input
+          placeholder="Name"
           type="text"
           name="name"
           onChange={(e) => setName(e.target.value)}
@@ -59,6 +61,7 @@ export default function Signup() {
         />
         <label>Username</label>
         <input
+          placeholder="Userame"
           type="text"
           name="username"
           onChange={(e) => setUsername(e.target.value)}
@@ -66,6 +69,7 @@ export default function Signup() {
         />
         <label>Password</label>
         <input
+          placeholder="Password"
           type="password"
           name="password"
           onChange={(e) => setPassword(e.target.value)}
@@ -75,5 +79,6 @@ export default function Signup() {
         <button>Create account</button>
       </form>
     </DefaultLayout>
+    
   );
 }

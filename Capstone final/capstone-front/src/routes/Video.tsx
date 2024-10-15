@@ -1,6 +1,6 @@
 import { ZegoUIKitPrebuilt } from '@zegocloud/zego-uikit-prebuilt';
-import { APP_ID, SERVER_SECRET, SERVER_URL } from '../auth/constants';
-import React, { useEffect } from 'react';
+import { APP_ID, SERVER_SECRET } from '../auth/constants';
+import { useEffect } from 'react';
 import PortalLayout from '../layout/PortalLayout';
 
 

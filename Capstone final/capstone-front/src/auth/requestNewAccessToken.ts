@@ -1,5 +1,5 @@
-import { AccessTokenResponse } from "../types/types.ts";
-import { API_URL } from "./authConstants.ts";
+import { AccessTokenResponse } from "../types/types";
+import { API_URL } from "./authConstants";
 
 export default async function requestNewAccessToken(refreshToken: string) {
   const response = await fetch(`${API_URL}/refresh-token`, {

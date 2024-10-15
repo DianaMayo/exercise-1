@@ -1,4 +1,4 @@
-import React from "react";
+
 import PortalLayout from "../layout/PortalLayout";
 
 export default function Profile() {

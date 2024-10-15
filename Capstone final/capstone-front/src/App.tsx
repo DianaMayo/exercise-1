@@ -1,9 +1,19 @@
+import { BrowserRouter } from "react-router-dom";
+import Dashboard from "./routes/Dashboard";
+import Signup from "./routes/Signup";
 
-import React from 'react';
-import './App.css'
+
 
 function App() {
-  return <>Hola</>;
+  return (
+    <BrowserRouter>
+  <div>
+    <main/>;
+    <Dashboard/>;
+    <Signup/>;
+  </div>
+  </BrowserRouter>
+  )
     }
 
 export default App;

@@ -10,7 +10,7 @@ import Profile from "./routes/Profile.tsx";
 import Video from "./routes/Video.tsx";
 import "./index.css";
 
-const router = createBrowserRouter([
+const Ruta = createBrowserRouter([
   {
     path: "/",
     element: <Login />,
@@ -42,9 +42,9 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <AuthProvider>
-      <RouterProvider router={router} />
+      <RouterProvider router={Ruta} />
     </AuthProvider>
   </React.StrictMode>
 );
 
-
+export default Ruta;

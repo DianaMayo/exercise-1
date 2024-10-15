@@ -51,7 +51,9 @@ export default function Login() {
     return <Navigate to="/dashboard" />;
   }
   return (
+   
     <DefaultLayout>
+       
       <form onSubmit={handleSubmit} className="form">
         <h1>Login</h1>
         {!!errorResponse && <div className="errorMessage">{errorResponse}</div>}
@@ -72,6 +74,7 @@ export default function Login() {
 
         <button>Login</button>
       </form>
+     
     </DefaultLayout>
   );
 }
